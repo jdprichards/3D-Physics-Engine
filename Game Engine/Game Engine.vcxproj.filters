@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game Engine.cpp" />
+    <ClCompile Include="Render\DXDevice.cpp" />
+    <ClCompile Include="Render\State.cpp" />
+    <ClCompile Include="Render\Shader.cpp" />
+    <ClCompile Include="Render\Texture.cpp" />
+    <ClCompile Include="Render\CBuffer.cpp" />
+    <ClCompile Include="Render\RenderGlobals.cpp" />
+    <ClCompile Include="Utility\Input.cpp" />
+    <ClCompile Include="Utility\Timer.cpp" />
+    <ClCompile Include="Maths\Vector2.cpp" />
+    <ClCompile Include="Maths\Vector3.cpp" />
+    <ClCompile Include="Maths\Vector4.cpp" />
+    <ClCompile Include="Maths\Matrix4x4.cpp" />
+    <ClCompile Include="Maths\MathHelpers.cpp" />
+    <ClCompile Include="Scene\SceneGlobals.cpp" />
+    <ClCompile Include="Scene\Messenger.cpp" />
+    <ClCompile Include="Scene\EntityManager.cpp" />
+    <ClCompile Include="Scene\Entity.cpp" />
+    <ClCompile Include="Render\Mesh.cpp" />
+    <ClCompile Include="Render\RenderMethod.cpp" />
+    <ClCompile Include="Scene\Camera.cpp" />
+    <ClCompile Include="Render\Assimp.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\Light.cpp" />
+    <ClCompile Include="Scene\RigidBody.cpp" />
+    <ClCompile Include="Maths\Matrix3x3.cpp" />
+    <ClCompile Include="External\imgui-master\imgui_draw.cpp" />
+    <ClCompile Include="External\imgui-master\imgui_widgets.cpp" />
+    <ClCompile Include="External\imgui-master\imgui.cpp" />
+    <ClCompile Include="External\imgui-master\imgui_demo.cpp" />
+    <ClCompile Include="External\imgui-master\examples\imgui_impl_dx11.cpp" />
+    <ClCompile Include="External\imgui-master\examples\imgui_impl_win32.cpp" />
+    <ClCompile Include="Scene\EngineGUI.cpp" />
+    <ClCompile Include="Collision Detection\CollisionDetection.cpp" />
+    <ClCompile Include="Maths\IntegrationMethods.cpp" />
+    <ClCompile Include="Collision Detection\BoundingVolume.cpp" />
+    <ClCompile Include="Collision Detection\BoundingSphere.cpp" />
+    <ClCompile Include="Collision Detection\AABB.cpp" />
+    <ClCompile Include="Collision Detection\OBB.cpp" />
+    <ClCompile Include="Maths\EigenCalculations.cpp" />
+    <ClCompile Include="Collision Detection\Plane.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Render\DXDevice.h" />
+    <ClInclude Include="Render\State.h" />
+    <ClInclude Include="Render\Shader.h" />
+    <ClInclude Include="Render\Texture.h" />
+    <ClInclude Include="Render\TextureTypes.h" />
+    <ClInclude Include="Render\CBuffer.h" />
+    <ClInclude Include="Render\RenderGlobals.h" />
+    <ClInclude Include="Render\CBufferTypes.h" />
+    <ClInclude Include="Render\MeshTypes.h" />
+    <ClInclude Include="Utility\Utility.h" />
+    <ClInclude Include="Utility\ColourTypes.h" />
+    <ClInclude Include="Utility\Input.h" />
+    <ClInclude Include="Utility\Timer.h" />
+    <ClInclude Include="Maths\Vector2.h" />
+    <ClInclude Include="Maths\Vector3.h" />
+    <ClInclude Include="Maths\Vector4.h" />
+    <ClInclude Include="Maths\Matrix4x4.h" />
+    <ClInclude Include="Maths\MathHelpers.h" />
+    <ClInclude Include="Scene\SceneGlobals.h" />
+    <ClInclude Include="Scene\Messenger.h" />
+    <ClInclude Include="Scene\EntityManager.h" />
+    <ClInclude Include="Scene\Entity.h" />
+    <ClInclude Include="Render\Mesh.h" />
+    <ClInclude Include="Render\RenderMethod.h" />
+    <ClInclude Include="Scene\Camera.h" />
+    <ClInclude Include="Scene\EntityTypes.h" />
+    <ClInclude Include="Render\Assimp.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\Light.h" />
+    <ClInclude Include="Scene\RigidBody.h" />
+    <ClInclude Include="Maths\Matrix3x3.h" />
+    <ClInclude Include="Scene\EngineGUI.h" />
+    <ClInclude Include="Collision Detection\CollisionDetection.h" />
+    <ClInclude Include="Maths\IntegrationMethods.h" />
+    <ClInclude Include="Collision Detection\BoundingVolume.h" />
+    <ClInclude Include="Collision Detection\BoundingSphere.h" />
+    <ClInclude Include="Collision Detection\AABB.h" />
+    <ClInclude Include="Collision Detection\OBB.h" />
+    <ClInclude Include="Maths\EigenCalculations.h" />
+    <ClInclude Include="Collision Detection\Plane.h" />
+    <ClInclude Include="Collision Detection\CollisionTypes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Render\Shaders\common.hlsli" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Render\Shaders\ps_blinn.hlsl" />
+    <FxCompile Include="Render\Shaders\ps_blinn_ds.hlsl" />
+    <FxCompile Include="Render\Shaders\ps_blinn_normal.hlsl" />
+    <FxCompile Include="Render\Shaders\ps_blinn_parallax.hlsl" />
+    <FxCompile Include="Render\Shaders\ps_colour.hlsl" />
+    <FxCompile Include="Render\Shaders\ps_texture.hlsl" />
+    <FxCompile Include="Render\Shaders\vs_clipspace.hlsl" />
+    <FxCompile Include="Render\Shaders\vs_position_normal.hlsl" />
+    <FxCompile Include="Render\Shaders\vs_position_normal_tangent_uv.hlsl" />
+    <FxCompile Include="Render\Shaders\vs_position_normal_uv.hlsl" />
+    <FxCompile Include="Render\Shaders\vs_uv.hlsl" />
+  </ItemGroup>
+</Project>

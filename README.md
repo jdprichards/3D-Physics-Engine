@@ -91,4 +91,4 @@ The next iteration will be developed in a separate repository and will build upo
 ### Build & Run
 
 ```bash
-git clone https://github.com/jdprichards/3d-physics-engine.git
+git clone https://github.com/jdprichards/3D-Physics-Engine
